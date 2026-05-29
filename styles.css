@@ -91,6 +91,45 @@ body::before {
   align-items: stretch;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.social-links a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    text-decoration: none;
+
+    background: rgba(100, 255, 218, 0.06);
+    border: 1px solid rgba(100, 255, 218, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+.social-links a i {
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    transform: translateY(-4px);
+    color: var(--accent);
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 15px rgba(100, 255, 218, 0.25),
+        0 0 30px rgba(100, 255, 218, 0.15);
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.22em;
